@@ -11,5 +11,5 @@ for i in range(20):
     c.append(random.randrange(100))
 
 d = [num for num in c if num % 2 == 0]
-print (c)
+print(c)
 print(d)
