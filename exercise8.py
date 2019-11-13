@@ -1,9 +1,3 @@
-player_1 = input("Name Spieler 1: ")
-player_2 = input("Name Spieler 2: ")
-
-choice_p1 = input("%s, wählst du Stein, Schere oder Papier? " % player_1)
-choice_p2 = input("%s, wählst du Stein, Schere oder Papier? " % player_2)
-
 def comp_answer(answ_1, answ_2):
     if answ_1 == answ_2:
         print("\nKeiner gewinnt - beiden haben %s gewählt!" % choice_p1)
@@ -26,4 +20,14 @@ def comp_answer(answ_1, answ_2):
         return("Eingabe kann nicht verarbeitet werden")
         sys.exit()
 
-print(comp_answer(choice_p1, choice_p2))
+
+
+str = "Ja"
+
+while str == "Ja":
+    player_1 = input("Name Spieler 1: ")
+    player_2 = input("Name Spieler 2: ")
+    choice_p1 = input("%s, wählst du Stein, Schere oder Papier? " % player_1)
+    choice_p2 = input("%s, wählst du Stein, Schere oder Papier? " % player_2)
+    print(comp_answer(choice_p1, choice_p2))
+    str = input("Nochmal spielen? Ja oder Nein eingeben: ")
