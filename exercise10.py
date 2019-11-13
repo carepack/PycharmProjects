@@ -10,6 +10,9 @@ b = random.sample(range(100), ran_num2)
 c = [num for num in a if num in b]
 
 print()
+print(ran_num1)
+print(ran_num2)
+print()
 print(a)
 print(b)
 print()
