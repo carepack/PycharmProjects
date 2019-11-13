@@ -1,3 +1,7 @@
+# 13.11.2019
+# Gemeinsame Werte in unterschiedlich langen Listen ermitteln
+# keine Duplikate ausgeben
+
 import random
 
 ran_num1 = random.randint(5,20)

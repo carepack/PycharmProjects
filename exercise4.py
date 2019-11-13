@@ -1,3 +1,6 @@
+# 13.11.2019
+# Ermitteln von Teilern einer Zahl. Ausgabe als Liste
+
 in_num = int(input("Bitte eine Zahl eingeben: "))
 
 x_ra = range(2, in_num+1)

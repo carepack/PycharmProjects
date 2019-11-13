@@ -1,3 +1,6 @@
+# 13.11.2019
+# Gerade / Ungerade Zahlen ermitteln. Vorgabe + Eingabe
+
 inp_num = int(input("Bitte füttern mit einer Zahl: "))
 
 if inp_num % 2 == 0:

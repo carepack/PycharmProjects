@@ -1,3 +1,6 @@
+# 13.11.2019
+# Prüfen auf größer / kleiner. Ausgeben einzeln und als Liste
+
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 b=[]
 c=[]

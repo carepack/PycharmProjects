@@ -1,3 +1,6 @@
+# 13.12.2019
+# Eingaben einlesen und Strings manipulieren
+
 from datetime import date
 
 name=input("Wie ist dein Name: ")

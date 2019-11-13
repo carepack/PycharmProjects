@@ -1,3 +1,7 @@
+# 13.11.2019
+# Überlagernde Liste und ermitteln von Übereinstimmungen
+# Liste randomisert erstellen
+
 import random
 
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]

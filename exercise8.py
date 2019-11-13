@@ -1,3 +1,7 @@
+# 13.11.2019
+# Schere, Stein, Papier
+# Aufrufen einer Funktion
+
 def comp_answer(answ_1, answ_2):
     if answ_1 == answ_2:
         print("\nKeiner gewinnt - beiden haben %s gewählt!" % choice_p1)

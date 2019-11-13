@@ -1,3 +1,6 @@
+# 13.11.2019
+# Zufallszahl erraten. While statement
+
 import random
 count = 0
 num = random.randint(1, 9)
