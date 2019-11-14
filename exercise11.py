@@ -11,7 +11,12 @@ def find_prime(user_value):
         else:
             return ("ist keine Primzahl da durch %s teilbar" % i)
     else:
-        return ("ist eine Primzahl")
+        return ("%s ist eine Primzahl" % user_value)
+
 
 user_in = int(input("Bite eine Zahl eingeben: "))
-print("Ihre Zahl " + str(find_prime(user_in)))
+
+if user_in == 1:
+    print("1 zählt nicht")
+else:
+    print("Ihre Zahl " + str(find_prime(user_in)))
