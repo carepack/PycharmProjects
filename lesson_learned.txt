@@ -1,0 +1,2 @@
+while loop kann else statement haben. else wird ausgeführt wenn die while bedingung false bekommt,
+also der loop bis ende durchlaufen ist
