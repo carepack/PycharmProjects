@@ -36,7 +36,6 @@ def ex5_ran_lists():
     return c
 # end function -----------------------------
 
-def list_gen():
 choice = input("What do you want to deduplicate? Enter random for auto lists or manual to input values: ")
 if choice == "random":
     print(str(ex5_ran_lists()))
