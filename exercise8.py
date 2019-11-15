@@ -1,37 +1,37 @@
 # 13.11.2019
-# Schere, Stein, Papier
-# Aufrufen einer Funktion
+# gameplay stone, siccors, paper
+# call via function
 
 def comp_answer(answ_1, answ_2):
     if answ_1 == answ_2:
-        print("\nKeiner gewinnt - beiden haben %s gewählt!" % choice_p1)
-    elif answ_1 == "Stein":
-        if answ_2 == "Papier":
-            return("Papier gewinnt")
+        print("\nNobody wins - both selected %s !" % choice_p1)
+    elif answ_1 == "Stone":
+        if answ_2 == "Paper":
+            return("Paper wins")
         else:
-            return("Stein gewinnt")
-    elif answ_1 == "Papier":
-        if answ_2 == "Schere":
-            return("Schere gewinnt")
+            return("Stone wins")
+    elif answ_1 == "Paper":
+        if answ_2 == "Scissors":
+            return("Scissors wins")
         else:
-            return("Papier gewinnt")
-    elif answ_1 == ("Schere"):
-        if answ_2 == ("Stein"):
-            return("Stein gewinnt")
+            return("Paper wins")
+    elif answ_1 == ("Scissors"):
+        if answ_2 == ("Stone"):
+            return("Stone wins")
         else:
-            return("Schere gewinnt")
+            return("Scissors wins")
     else:
-        return("Eingabe kann nicht verarbeitet werden")
+        return("Can't compute input")
         sys.exit()
 
 
 
-str = "Ja"
+str = "yes"
 
-while str == "Ja":
-    player_1 = input("Name Spieler 1: ")
-    player_2 = input("Name Spieler 2: ")
-    choice_p1 = input("%s, wählst du Stein, Schere oder Papier? " % player_1)
-    choice_p2 = input("%s, wählst du Stein, Schere oder Papier? " % player_2)
+while str == "yes":
+    player_1 = input("Name player 1: ")
+    player_2 = input("Name player 2: ")
+    choice_p1 = input("%s, choose you stone, scissors or paper? " % player_1)
+    choice_p2 = input("%s, choose you stone, scissors or paper? " % player_2)
     print(comp_answer(choice_p1, choice_p2))
-    str = input("Nochmal spielen? Ja oder Nein eingeben: ")
+    str = input("Play again yes or no: ")

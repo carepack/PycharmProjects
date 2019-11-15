@@ -1,5 +1,5 @@
 # 13.11.2019
-# Prüfen auf größer / kleiner. Ausgeben einzeln und als Liste
+# check for gt / lt. single and list output
 
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 b=[]
@@ -12,7 +12,7 @@ for element in a:
 
 print(b)
 
-in_num = int(input("Nenne eine Zahl: "))
+in_num = int(input("Tell me a number: "))
 
 for element in a:
     if element < in_num:

@@ -1,19 +1,19 @@
 # 13.11.2019
-# Gerade / Ungerade Zahlen ermitteln. Vorgabe + Eingabe
+# identify even / odd numbers. specified / input
 
-inp_num = int(input("Bitte füttern mit einer Zahl: "))
+inp_num = int(input("Please input value: "))
 
 if inp_num % 2 == 0:
-    print("Es handelt sich um eine gerade Zahl\n")
-else: print("Es handelt sich um eine ungerade Zahl\n")
+    print("It's an even number\n")
+else: print("It's an odd number\n")
 
 if inp_num % 4 == 0:
-    print("Es handelt sich um EIN vielfaches von 4\n")
-else: print("Die Zahl ist KEIN vielfaches von 4\n")
+    print("It's a multiple of 4\n")
+else: print("It's not a multiple of 4\n")
 
-in_num1=int(input("Bitte geben sie die erste Zahl ein: "))
-in_num2=int(input("Bitte geben sie die zweite Zahl ein: "))
+in_num1=int(input("Please enter the first number: "))
+in_num2=int(input("Please enter the second number: "))
 
 if in_num1 % in_num2 == 0:
-    print("\nZahl 1 ist durch Zahl 2 ohne Rest teilbar")
-else: print("\nZahl 1 ist durch Zahl 2 nicht ohne Rest teilbar")
+    print("\nNumber 1 is dividable by 2 without rest")
+else: print("\nNumber 1 is not dividable by 2 without rest")

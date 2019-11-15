@@ -1,6 +1,6 @@
 # 13.11.2019
-# Gemeinsame Werte in unterschiedlich langen Listen ermitteln
-# keine Duplikate ausgeben
+# detect common numbers in lists with different ranges
+# suppress duplicates
 
 import random
 

@@ -1,6 +1,5 @@
 # 13.11.2019
-# List comprehension. Aller geraden Zahlen in eine neue Liste
-# mit Einzeiler
+# lsit comprehension. collect even numbers in new list
 
 import random
 

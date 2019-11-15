@@ -1,5 +1,5 @@
 # 14.11.2019
-# Print out first / last value of a list with functions and user input
+# print out first / last value of a list with functions and user input
 
 a = []
 b = []
@@ -11,9 +11,9 @@ def get_fifo(a_list):
     return b
 
 def get_input(user_val):
-    while user_val != "Exit":
-        user_val = input("Zahl eingeben oder Exit: ")
-        if user_val != "Exit":
+    while user_val != "exit":
+        user_val = input("Input number or exit: ")
+        if user_val != "exit":
             a.append(user_val)
 
 get_input(user_in)

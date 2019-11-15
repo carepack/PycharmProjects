@@ -1,6 +1,6 @@
 # 13.11.2019
-# Überlagernde Liste und ermitteln von Übereinstimmungen
-# Liste randomisert erstellen
+# overlapping lists and identify common numbers
+# generate random lsit
 
 import random
 

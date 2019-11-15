@@ -1,6 +1,6 @@
 # 13.11.2019
-# Auf Primzahl prüfen mit verwenden einer Funktion
-# while / else wird ausgeführt wenn while Bedingung false bekommt / Zähler abgelaufen ist
+# check for prime numbers with function
+# while / else is executed if while condition becomes true / counter expires
 
 def find_prime(user_value):
     i = 2
@@ -9,14 +9,14 @@ def find_prime(user_value):
         if prime != 0:
             i += 1
         else:
-            return ("ist keine Primzahl da durch %s teilbar" % i)
+            return ("is not a prime number because dividable by %s" % i)
     else:
-        return ("%s ist eine Primzahl" % user_value)
+        return ("%s is a prime number" % user_value)
 
 
-user_in = int(input("Bite eine Zahl eingeben: "))
+user_in = int(input("Please enter number: "))
 
 if user_in == 1:
-    print("1 zählt nicht")
+    print("1 doesn't count")
 else:
-    print("Ihre Zahl " + str(find_prime(user_in)))
+    print("Your number " + str(find_prime(user_in)))

@@ -13,5 +13,5 @@ def gen_fibo(user_val):
         count += 1
     return a
 
-user_in = int(input("Bitte die Anzahl der Fibonacci Zahlen zur Ausgabe eingeben: "))
+user_in = int(input("Please enter how many fibonacci  numbers you want: "))
 print(str(gen_fibo(user_in)))
