@@ -1,2 +1,5 @@
 while loop kann else statement haben. else wird ausgeführt wenn die while bedingung false bekommt,
 also der loop bis ende durchlaufen ist
+
+input().split() kann jedes zeichen angegeben werden. bei leer wird bei whitespace getrennt
+print("Congrats! Your number {0} is common with the wanted {1} ".format(inp_user, num))
