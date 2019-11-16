@@ -6,3 +6,4 @@ print("Congrats! Your number {0} is common with the wanted {1} ".format(inp_user
 str.strip entfernt whitespaces
 secrets.choice wählt zufällig ein element in einer nicht leeren squenz
 join nimmt alle elemente in einem iterierbaren objekt und fügt sie zu einem strin zusammen
+macos install packages for different python version pip3 install --user requests or pip2.7
