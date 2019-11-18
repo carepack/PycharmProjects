@@ -1,32 +1,50 @@
-from bs4 import BeautifulSoup
 import requests
+import html5lib
+from bs4 import BeautifulSoup
+
+r1 = requests.get('https://www.zeit.de/politik/ausland/2019-11/polen-marsch-unabhaengigkeit-nationalisten-rechtsextreme')
+#coverpage = r1
+soup1 = BeautifulSoup(r1.text, 'html.parser')
+res_soup = soup1.find_all("p", class_="paragraph article__item")
+art = []
+for a in res_soup:
+    #art.append(a)
+    #art.append(a.text.strip())
+    art.append(a.text.strip('\n'))
+result = str(art)
+new_result = result.replace("[", "").replace("]", "").replace("'", "").replace("*\n", "").replace("', ", " ").replace(".,", ". ").replace("\xa0\xa0\xa0", "")
+print(new_result)
 
 
-response = requests.get('http://www.zeit.de/politik/index')
-print(response.status_code)
-print(response.headers['content-type'])
-print(response.text)
-soup = BeautifulSoup(response.text, 'html.parser')
-print(soup.prettify())
 
 
 
-#import faster_than_requests as req
 
 
 
-#import requests
 
 
 
-#url = req.gets("https://zeit.de/politik/index")
-#print(url)
 
 
-# print (response.status_code)
-# print (response.content)
-# requests
-# print(req.gets("https://www.zeit.de/politik/index"))
 
-# print("hello")
-# soup = bs4(html_doc, 'html.parser')
+
+
+
+
+
+
+
+#for elements in soup1.find_all("p", class_="paragraph article__item"):
+#    print(elements.get_text())
+#    for elements in soup1.stripped_strings:
+#        print(repr(elements))
+
+#print(text)
+#articles = []
+
+#for news in soup1:
+#    print(soup1.find("p", class_="paragraph article__item").text)
+
+#print(articles)
+#print(soup1.p['class': 'paragraph article__item'])
