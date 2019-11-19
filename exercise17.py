@@ -1,5 +1,5 @@
 import requests
-import html5lib
+#import html5lib
 from bs4 import BeautifulSoup
 
 r1 = requests.get('https://www.zeit.de/politik/ausland/2019-11/polen-marsch-unabhaengigkeit-nationalisten-rechtsextreme')
@@ -9,10 +9,10 @@ res_soup = soup1.find_all("p", class_="paragraph article__item")
 art = []
 for a in res_soup:
     #art.append(a)
-    #art.append(a.text.strip())
-    art.append(a.text.strip('\n'))
+    art.append(a.text.strip())
+    #art.append(a.text.strip('\n'))
 result = str(art)
-new_result = result.replace("[", "").replace("]", "").replace("'", "").replace("*\n", "").replace("', ", " ").replace(".,", ". ").replace("\xa0\xa0\xa0", "")
+new_result = result.replace("[", "").replace("]", "").replace("'", "").replace("*\n", "").replace("', ", " ").replace(".,", ". ") #.replace("\xa0\xa0\xa0", "")
 print(new_result)
 
 
