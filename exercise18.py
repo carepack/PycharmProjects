@@ -18,41 +18,19 @@ def run_game(random_digit, guess):
     guess = list(guess)
     random_digit = list(random_digit)
     for i in range(len(random_digit)):
-        if random_digit[0] == guess[0]:
+        if random_digit[i] == guess[i]:
             cowbull[1] +=1
-            del guess[i]
             i += 1
-        else:
-            #print(str(guess))
-            for i in range(len(random_digit)):
-                if random_digit[0] == guess[0]:
-                    cowbull[0] +=1
-                    i += 1
+        elif guess[i] in random_digit and not cowbull:
+            print(str(guess))
+            cowbull[0] +=1
+            i += 1
     return cowbull
-
-
-
-
-
-
-#    guess = ''
-#    while guess != random_digit:
-#        guess = input("Please enter your Number: ")
-#        if guess != random_digit:
-#            #guess_list = []
-#            secret_list = []
-#            guess_list = list(guess)
-#            secret_list = list(random_digit)
-#            print(guess_list)
-#            print(secret_list)
-#            commom_values = [element for element in secret_list if element in guess_list]
-#            print(commom_values)
-
 
 def main():
     playgame = True
     tries = 0
-    random_digit = gen_digit()
+    random_digit = '0201' #gen_digit()
     while playgame:
         guess = input("Please enter your guess: ")
         if guess == exit:
