@@ -6,3 +6,4 @@ quick navigate in current file: Strg+F12
 rename variables with auto-correct in all places: Umschalt+F6
 tab completion with: tab or enter. tab overwrite rest of the name to the right
 optimize imports. remove unnecessary: Strg+Alt+O (letter)
+extended selection: Strg+W
