@@ -3,38 +3,32 @@
 
 import sys
 
+def bin_search(ordered_List, guess):
+    start_index = 0
+    end_index = len(ordered_List) - 1
 
+    while True:
+        middle_index = round((end_index + start_index) / 2)
+        if start_index == middle_index:
+            print("Out of range: number not in list")
+            return False
+
+        middle_element = ordered_List[middle_index]
+
+        if middle_element == guess:
+            print("Congrats, the number is in the list: " + str(ordered_List[middle_index]))
+            return True
+        elif guess < middle_element:
+            end_index = middle_index
+        elif guess > middle_element:
+            start_index = middle_index
+        else:
+            return False
 
 def main():
-    run = True
     ordered_List = [9, 16, 33, 67, 118, 119, 143, 149, 160]
-    guess = int(input("Please give number"))
-    len_list = round(len(ordered_List) / 2)
-    print(str(ordered_List[len_list]))
-    #print(len_list)
-    while True:
-
-        if len_list == 0 or len_list >= (len(ordered_List) - 1):
-            print("Number not included in list")
-            return False
-
-        if guess == ordered_List[len_list]:
-            print ("Thats your Number: " + str(ordered_List[len_list]))
-            return False
-        elif guess < ordered_List[len_list]:
-            len_list -= 1
-        elif guess > ordered_List[len_list]:
-            len_list += 1
-
-
-
-    #else:
-    #    print("Number not included in list!")
-
-
-
-
-
+    guess = int(input("Please enter your number: "))
+    print(bin_search(ordered_List, guess))
 
 if __name__ == '__main__':
     if sys.version_info[0] < 3:
