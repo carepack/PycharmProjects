@@ -6,12 +6,10 @@ import sys
 def bin_search(ordered_List, guess):
     start_index = 0
     end_index = len(ordered_List) - 1
+    l = 0
 
-    while True:
+    while l < len(ordered_List) - 1:
         middle_index = round((end_index + start_index) / 2)
-        if start_index == middle_index:
-            print("Out of range: number not in list")
-            return False
 
         middle_element = ordered_List[middle_index]
 
@@ -20,10 +18,13 @@ def bin_search(ordered_List, guess):
             return True
         elif guess < middle_element:
             end_index = middle_index
+            l += 1
         elif guess > middle_element:
             start_index = middle_index
-        else:
-            return False
+            l += 1
+    else:
+        print("Out of range: number not in list")
+        return False
 
 def main():
     ordered_List = [9, 16, 33, 67, 118, 119, 143, 149, 160]
