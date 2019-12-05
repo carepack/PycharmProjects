@@ -21,7 +21,7 @@ def run_game(random_digit, guess):
         if random_digit[i] == guess[i]:
             cowbull[1] +=1
             i += 1
-        elif guess[i] in random_digit and not cowbull:
+        elif guess[i] in random_digit: # and not cowbull:
             print(str(guess))
             cowbull[0] +=1
             i += 1
@@ -30,7 +30,7 @@ def run_game(random_digit, guess):
 def main():
     playgame = True
     tries = 0
-    random_digit = '0201' #gen_digit()
+    random_digit = gen_digit()
     while playgame:
         guess = input("Please enter your guess: ")
         if guess == exit:
