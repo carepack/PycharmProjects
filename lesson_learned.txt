@@ -20,3 +20,9 @@ Its possible to initialize a variable with TRUE. Then they could be used in a wh
 play = Treu
 while play:
 xxx
+
+strip = remove both leading and trailing characters
+split = returns the string as list
+
+readline = read the lines - variable contains string but not iterable
+readlines = every line as list element
