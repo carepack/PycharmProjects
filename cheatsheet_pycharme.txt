@@ -2,6 +2,7 @@ find usage: Alt+Umschalt+7
 special code completion: Strg+Leertaste twice
 quick view documentation: Strg+Q
 move to declaration: Strg+B
+view parameter info: Strg+P
 quick navigate in current file: Strg+F12
 rename variables with auto-correct in all places: Umschalt+F6
 tab completion with: tab or enter. tab overwrite rest of the name to the right
