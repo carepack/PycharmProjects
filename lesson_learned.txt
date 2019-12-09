@@ -33,3 +33,7 @@ alternative with loop
 for element in lista
     if element in listb:
         listc.append(element
+
+if you haven't an iterable object but want to use for loop, user the variable with range
+i = 5
+for item in range(i)

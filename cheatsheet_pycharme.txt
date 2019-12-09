@@ -10,3 +10,4 @@ optimize imports. remove unnecessary: Strg+Alt+O (letter)
 extended selection: Strg+W
 project files overview: double shift
 basic code completion: Strg+Leertaste
+override methods of the base class: Strg+O
