@@ -32,7 +32,7 @@ xxx = [element for element in lista if elemen in listb]
 alternative with loop
 for element in lista
     if element in listb:
-        listc.append(element
+        xxx.append(element
 
 if you haven't an iterable object but want to use for loop, user the variable with range
 i = 5
