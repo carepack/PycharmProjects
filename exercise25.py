@@ -3,68 +3,47 @@
 
 import sys
 
-#def search_guess(g, max, mid, c):
-
-
-
-
-
-
-
-
-
-
-
-
 def main():
-	guess = int(input("Welcome to the game, I'll look how often I have to check guess until I find your number. Input (0 - 100): "))
-	count = 0
-	min_range = 0
-	mid_range = 50
-	max_range = list(range(1, 101, 3))
-	high_mid = 0
-	low_mid = 0
-	high_low = ""
-	result = 0
+	print("Hi, take a number from 1 to 99 and I'm goin' find them")
 	run = True
-	print(max_range)
+	pattern = list(range(1, 101))
+	min_index = 0
+	max_index = len(pattern)
+	mid_index = round(len(pattern) / 2)
+	count = 0
 
 	while run:
 		count += 1
-		if guess == min_range:
-			print("The number is " + str(min_range) + " and it took " + str(count) + " try")
-		elif guess == max_range:
-			print("The number is " + str(max_range) + " and it took " + str(count) + " try")
-		elif guess == mid_range:
-			print("The number is " + str(mid_range) + " and it took " + str(count) + " try")
-
-
-
-		high_low = input("Is your number higher or lower than " + str(mid_range) + " : ")
-		#if high_low == "higher":
-
-
-
-
-
-
-
-	#print(search_guess(guess, max_range, mid_range, count))
-
-
-	#while max_range != guess:
-	#	count += 1
-	#	max_range = search_guess(guess, max_range)
-	#else:
-	#	result = 100
-	#	print("The number is: " + str(result) + " and you tried it: " + str(count))
-
-
-
-
-
-
-
+		high_low = input("Is your number higher or lower than: " + str(mid_index) + " if the value is correct, type correct ")
+		#if high_low == "correct":
+		if (mid_index - 1) == min_index or (mid_index + 1) == max_index or high_low == "correct":
+		#if not mid_index != 0 or mid_index != 100:
+			if high_low == "correct":
+				print("The value is " + str(mid_index) + " and tried it " + str(count) + " times")
+				run = False
+			elif mid_index == 50:
+				print("The value is " + str(mid_index) + " and tried it " + str(count) + " times")
+				run = False
+			elif mid_index > 50 and mid_index % 2 != 0:
+				print("The value is " + str(mid_index + 1) + " and tried it " + str(count) + " times")
+				run = False
+			elif mid_index > 50 and mid_index % 2 == 0:
+				print("The value is " + str(mid_index - 1) + " and tried it " + str(count) + " times")
+				run = False
+			elif mid_index < 50 and mid_index % 2 != 0:
+				print("The value is " + str(mid_index + 1) + " and tried it " + str(count) + " times")
+				run = False
+			elif mid_index < 50 and mid_index % 2 == 0:
+				print("The value is " + str(mid_index - 1) + " and tried it " + str(count) + " times")
+				run = False
+		elif high_low == "lower":
+			max_index = mid_index
+			mid_index = round((min_index + max_index) / 2)
+		elif high_low == "higher":
+			min_index = mid_index
+			mid_index = round((min_index + max_index) / 2)
+		else:
+			print(" Value is 100 or 0")
 
 
 if __name__ == '__main__':
